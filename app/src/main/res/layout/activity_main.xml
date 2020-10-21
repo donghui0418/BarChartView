@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:bar_chart_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+    
+    <donghui.barchartview.BarChartView
+        android:id="@+id/bcv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:clickable="true"
+        android:focusable="true"
+        bar_chart_view:animation_duration_max="500"
+        bar_chart_view:animation_duration_min="300"
+        bar_chart_view:bar_count="4"
+        bar_chart_view:bar_width="10dp"
+        bar_chart_view:left_margin="35dp"
+        bar_chart_view:bar_left_margin="30dp"
+        bar_chart_view:bar_bottom_margin="40dp"
+        bar_chart_view:bar_height_max="160dp"
+        bar_chart_view:bar_height_start="20dp"
+        bar_chart_view:bar_color_default="@android:color/holo_green_light"
+        bar_chart_view:bar_color_pressed="@android:color/holo_orange_light"
+        bar_chart_view:bar_color_selected="@android:color/holo_red_light"
+        bar_chart_view:bar_color_activated="@android:color/holo_blue_light"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:layout_below="@+id/bcv"/>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cancel"
+        android:layout_below="@+id/start"/>
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="select"
+        android:layout_below="@+id/cancel"/>
+
+    <Button
+        android:id="@+id/unselect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="unselect"
+        android:layout_below="@+id/select"/>
+
+    <Button
+        android:id="@+id/activate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="activate"
+        android:layout_below="@+id/unselect"/>
+
+    <Button
+        android:id="@+id/unactivate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="unactivate"
+        android:layout_below="@+id/activate"/>
+
+</RelativeLayout>

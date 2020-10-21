@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BarChartView">
+        <attr name="bar_count" format="integer"/>
+        <attr name="left_margin" format="dimension"/>
+        <attr name="bar_left_margin" format="dimension"/>
+        <attr name="bar_bottom_margin" format="dimension"/>
+        <attr name="bar_width" format="dimension"/>
+        <attr name="bar_height_max" format="dimension"/>
+        <attr name="bar_height_start" format="dimension"/>
+        <attr name="bar_color_default" format="color"/>
+        <attr name="bar_color_pressed" format="color"/>
+        <attr name="bar_color_selected" format="color"/>
+        <attr name="bar_color_activated" format="color"/>
+        <attr name="animation_duration_max" format="integer"/>
+        <attr name="animation_duration_min" format="integer"/>
+    </declare-styleable>
+</resources>
